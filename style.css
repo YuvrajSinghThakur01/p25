@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .flyer {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flyer-header {
+    background-color: rgb(241, 155, 51);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .flyer-header h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .flyer-header p {
+    font-size: 1.2rem;
+  }
+  
+  .flyer-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .flyer-content {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+  }
+  
+  .flyer-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .flyer-content p {
+    font-size: 1rem;
+  }
+  
+  .flyer-image {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .flyer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .flyer-footer {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .flyer-footer .location {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .flyer-footer .register {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .flyer-footer .register:hover {
+    background-color: #e05d54;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .flyer-header h1 {
+      font-size: 5rem;
+    }
+  
+    .flyer-header p {
+      font-size: 3rem;
+    }
+  
+    .flyer-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .flyer-content p {
+      font-size: 0.9rem;
+    }
+  
+    .flyer-footer .location {
+      font-size: 1rem;
+    }
+  
+    .flyer-footer .cta-btn {
+      font-size: 1rem;
+    }
+  
+    .flyer-details {
+      flex-direction: column;
+    }
+  
+    .flyer-image img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flyer-header h1 {
+      font-size: 3rem;
+    }
+  
+    .flyer-header p {
+      font-size: 0.9rem;
+    }
+  
+    .flyer-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .flyer-footer .location {
+      font-size: 0.9rem;
+    }
+  
+    .flyer-footer .cta-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
